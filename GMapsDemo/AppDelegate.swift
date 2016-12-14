@@ -12,10 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let keyGoogleAPI = "AIzaSyBB2YM_241PBEqca9UeK0HKK_Vlxxs5X0Q"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        GMSServices.provideAPIKey(keyGoogleAPI)
         return true
     }
 
